@@ -1,0 +1,8 @@
+name: call_run-this
+on: workflow_dispatch
+jobs:
+  call-workflow-passing-data:
+    uses: AllStarLink/asl_workflows/.github/workflows/ephemeral_ec2_run-this.yml@develop
+    with:
+      run-this: echo 'does this work?'
+    secrets: inherit
