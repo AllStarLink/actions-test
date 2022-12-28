@@ -1,0 +1,5 @@
+jobs:
+  call-workflow-passing-data:
+    uses: AllStarLink/asl_workflows/.github/workflows/ephemeral_ec2_say-this.yml@main
+    with:
+      config-path: foobar
