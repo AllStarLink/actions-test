@@ -1,0 +1,10 @@
+name: call_do-this
+on: workflow_dispatch
+jobs:
+  call-workflow-passing-data:
+    uses: AllStarLink/asl_workflows/.github/workflows/ephemeral_ec2_do-this.yml@develop
+    with:
+      do-this:
+        - name: Hello World
+          run: echo 'does this work?'
+    secrets: inherit
