@@ -1,3 +1,5 @@
+name: call_say-this
+on: workflow_dispatch
 jobs:
   call-workflow-passing-data:
     uses: AllStarLink/asl_workflows/.github/workflows/ephemeral_ec2_say-this.yml@main
