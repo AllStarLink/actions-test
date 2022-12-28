@@ -5,5 +5,4 @@ jobs:
     uses: AllStarLink/asl_workflows/.github/workflows/ephemeral_ec2_say-this.yml@develop
     with:
       say-this: foobar
-    secrets:
-      aws-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    secrets: inherit
