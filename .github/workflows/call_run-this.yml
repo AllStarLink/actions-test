@@ -5,4 +5,5 @@ jobs:
     uses: AllStarLink/asl_workflows/.github/workflows/ephemeral_ec2_run-this.yml@develop
     with:
       run-this: docker run hello-world
+      arch: arm64
     secrets: inherit
