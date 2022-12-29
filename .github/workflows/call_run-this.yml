@@ -6,4 +6,5 @@ jobs:
     with:
       run-this: docker run hello-world
       arch: arm64
+      artifact-path: /var/log/cloud*
     secrets: inherit
