@@ -4,7 +4,7 @@ jobs:
   call-workflow-passing-data:
     uses: AllStarLink/asl_workflows/.github/workflows/ephemeral_ec2_run-this.yml@develop
     with:
-      run-this: docker run hello-world
+      run-this: docker run hello-world; df -h
       arch: arm64
       artifact-path: /var/log/cloud*
     secrets: inherit
