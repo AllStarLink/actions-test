@@ -2,7 +2,7 @@ name: call_run-this
 on: workflow_dispatch
 jobs:
   call-workflow-passing-data:
-    uses: AllStarLink/asl_workflows/.github/workflows/ephemeral_ec2_run-this.yml@asl
+    uses: AllStarLink/asl_workflows/.github/workflows/ephemeral_ec2_run-this.yml@develop
     with:
       run-this: docker run hello-world; df -h; lsblk
       arch: arm64
